@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+body{
+    overflow-x: hidden !important;
+}
+.big-banner{
+    background-image: url(l.jpg);
+}
+
+.container-1{
+    background: linear-gradient(to right, rgb(255, 0, 0) , rgb(224, 116, 16));
+    
+    
+    
+}
+.extra-div{
+    background-color: #fff;
+    border:  medium none;
+    padding: 50px!important;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.extra-div h2{
+
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
+
+.row-extra-div{
+    width: 100%; height:auto;
+    margin: 100px 0;
+    text-align: center;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+    
+}
+h5{
+    font-weight: bold;
+    
+}
