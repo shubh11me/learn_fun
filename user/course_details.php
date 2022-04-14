@@ -126,7 +126,7 @@ if (isset($_GET['course_id'])) {
                                 <?php
                                 }
                                 else {
-                                    echo '<a style="width:100%;border:2px solid white" href="checkout_course.php?course_id=<?php echo $course_id ?>"><button style="width:100%;background-color:#5fcf80;color:white" class="btn">Enroll Now</button></a>';
+                                    echo '<a style="width:100%;border:2px solid white" href="checkout_course.php?course_id='.$course_id.'"><button style="width:100%;background-color:#5fcf80;color:white" class="btn">Enroll Now</button></a>';
                                 }
                             } else {
 
