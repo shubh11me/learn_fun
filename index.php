@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+include './conn.php';
 ?>
 
 <!DOCTYPE html>
@@ -226,7 +226,33 @@ session_start();
 
   </section>
   <!----  learning section start-->
+<?php
+$res=mysqli_query($conn,"select * from course")
 
+?>
+  <section id="courses">
+            <div class="container">
+                <div class="row">
+                  <?php 
+                  while ($row_c=mysqli_fetch_assoc($res)) {
+                   ?>
+                    <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+           <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+             <h5 class="card-title"><?php echo $row_c['course_name'] ?></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="http://localhost/learn_fun/user/course_details.php?course_id=<?php echo $row_c['course_id'] ?>" class="btn btn-primary">Go somewhere</a>
+             </div>
+</div>
+                    </div>
+<?php
+                  }
+
+                  ?>
+                </div>
+            </div>
+        </section>
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
